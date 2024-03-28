@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   
@@ -28,8 +29,12 @@ const Navbar = () => {
           {menuList.map((menu)=>(
             <li>{menu}</li>
           ))}
-        </ul>  
-        <div></div>
+        </ul>
+
+        <div>
+            <FontAwesomeIcon icon={faSearch} />
+            <input type="text" />
+        </div>
       </div>
     </div>
   );
