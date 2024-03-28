@@ -2,21 +2,24 @@
     display: flex;
     justify-content: flex-end;
     margin: 20px; 
-};
+}
 
-.nav-section {
+.nav-section{
     display: flex;
     justify-content: center;
-};
+}
 
 .menu-list{
     display: flex;
-    list-style-type: none;
-};
+    
+    /*점 지우기*/
+    list-style-type: none; 
+}
 
 .menu-list li{
-    padding: 10px;
-};
+    /* 메뉴 사이에 공간 */
+    padding: 10px; 
+}
 
 .menu-area{
     display: flex;

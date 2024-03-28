@@ -6,7 +6,6 @@ import Login from './page/Login';
 import ProductDetail from './page/ProductDetail';
 import Navbar from './component/Navbar';
 
-
 //1. 전체 상품페이지, 로그인, 상품상세페이지.
 //1-1. 네이게이션바
 //2. 전체 상품페이지에서는 전체상품을 볼 수 있다.
@@ -18,16 +17,14 @@ import Navbar from './component/Navbar';
 //8. 로그인을 하면 로그아웃이 보이고, 로그아웃을 하면 로그인이 보인다.
 //9. 상품을 검색할 수 있다.
 
-
 function App() {
   return (
     <div>
       <Navbar />
-
       <Routes>
         <Route path="/" element={<ProductAll />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/product/:id" element={<ProductDetail/>} />
+        <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
     </div>
   );
